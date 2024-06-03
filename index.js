@@ -1,7 +1,7 @@
 //selecionado a imagem
 const imagemVisualizacao = document.getElementById("imagem-visualizacao");
 // selecionado compos radio para usar no addeventlistner
-const radios = document.getElementsByName("radios");
+const radiosinput = document.getElementsByName("radios");
 
 let imagemselecionada = 1;
 
@@ -12,6 +12,6 @@ function trocarImagem() {
   imagemVisualizacao.src = `imagem/imagem-${imagemselecionada}.jpeg`;
 }
 
-radios.forEach((radio) => {
+radiosinput.forEach((radio) => {
   radio.addEventListener("change", trocarImagem);
 });
